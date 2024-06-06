@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'popins', sans-serif; */
+}
+body{
+    background-color: black;
+}
+.main {
+  background-image: url("Assets/Images/bg.jpg");
+  height: 75vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 120vw);
+}
+.main .box {
+  height: 75vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60vw;
+  margin: auto;
+  align-items: center;
+  height: 60px;
+}
+nav img {
+  color: red;
+  width: 140px;
+  position: relative;
+  z-index: 10;
+  top: 20px;
+}
+nav button {
+  z-index: 10;
+  position: relative;
+  top: 10px;
+  color: white;
+  border: 2px solid red;
+  background: rgb(229, 9, 20);
+  padding: 0.25rem 1rem;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.895rem;
+  font-weight: 600;
+  min-height: 2rem;
+}
+.box .main_text {
+ height: 100%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  line-height: 60px;
+  padding: 23px;
+}
+
+.main_text> :nth-child(1) {
+  font-size: 48px;
+  font-weight: 900;
+text-align: center;
+}
+.main_text> :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.main_text> :nth-child(3) {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+}
+.email{
+    line-height: 100px;
+}
+.email input{
+    height: 6vh;
+    background: transparent;
+    padding: 1.0rem 3rem 0.5rem;
+    /* border: 2px solid #3cb13c; */
+    border: 2px solid #ffff;
+    border-radius: 2px;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    
+}
+
+.email button {
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    border: 2px solid red;
+    font-family: "Netflix Sans";
+    padding: 15px 28px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.email input::placeholder {
+    color: rgb(170, 166, 166);
+    font-size: 15px;
+    font-weight: 100;
+}
+@media (max-width: 768px) {
+    .email{
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        justify-content: center;
+        align-content: center;
+    }
+}
+.separation{
+    height: 7px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Netflix sans";
+}
+
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 570px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
