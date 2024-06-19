@@ -1,176 +1,241 @@
-@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family: 'popins', sans-serif; */
+*{
+    padding-top:0;
+    margin-top: 0.35454545454545455vh;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
+
 body{
     background-color: black;
-}
-.main {
-  background-image: url("Assets/Images/bg.jpg");
-  height: 75vh;
-  position: relative;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: max(1200px, 120vw);
-}
-.main .box {
-  height: 75vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  max-width: 60vw;
-  margin: auto;
-  align-items: center;
-  height: 60px;
-}
-nav img {
-  color: red;
-  width: 140px;
-  position: relative;
-  z-index: 10;
-  top: 20px;
-}
-nav button {
-  z-index: 10;
-  position: relative;
-  top: 10px;
-  color: white;
-  border: 2px solid red;
-  background: rgb(229, 9, 20);
-  padding: 0.25rem 1rem;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 6px;
-  font-size: 0.895rem;
-  font-weight: 600;
-  min-height: 2rem;
-}
-.box .main_text {
- height: 100%;
-  color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
-    sans-serif;
-  line-height: 60px;
-  padding: 23px;
+    color: #fff;
+
 }
 
-.main_text> :nth-child(1) {
-  font-size: 48px;
-  font-weight: 900;
-text-align: center;
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 1.4204545454545454vh 4%;
+    position: relative;
 }
-.main_text> :nth-child(2) {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
+nav{
+    display: flex;
+    align-items: center;
+    padding:1.4285714285714286vh 0;
+    justify-content: space-between;
+    
+
 }
-.main_text> :nth-child(3) {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: center;
+.logo{
+    height:2.8125rem;/*1.8125 */
+    width: 10.4375rem;
+
 }
-.email{
-    line-height: 100px;
-}
-.email input{
-    height: 6vh;
-    background: transparent;
-    padding: 1.0rem 3rem 0.5rem;
-    /* border: 2px solid #3cb13c; */
-    border: 2px solid #ffff;
-    border-radius: 2px;
+button{
+    border: 0;
+    outline: 0;
+    margin-top: -1.4285714285714286vh;
+    margin-left: 4.285714285714286v;
+    background: red;
     color: white;
-    font-size: 18px;
-    text-align: left;
+    padding: 1.0714285714285714vh 2.2857142857142856vh;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.english-logo{
+    padding: 7px 16px;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border-color: white;
+    border: 1px solid white;   
+}
+.world-logo{
+    padding: ;
+    display: inline-flex;
+    align-items: center;
+}
+button img{
+    width: 15px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.content{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content h1{
+    font-size: 62px;
+    line-height: 75px;
+    font-weight: 600;
+    max-width: 700px;
+}
+.content h3{
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: -30px;
+}
+p{
+    font-weight: 200;
+    font-size: 19px;
+}
+.signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.signup button{
+    padding: 23px 30px;    
+}
+.signupbutton{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/* -------------------features--------------------- */
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+    width: 100%;
+}
+
+.box{
+    box-sizing: border-box;
+    border-bottom:8px solid #fff;
+}
+.rows{
+    
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+.text-column{
+    margin-top: 10px;
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.features-image{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.features-image img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.features p{
+    font-size: 27px;
+}
+
+/* secong image slot */
+
+.oppo-text-column{
+    flex-basis: 50%;
+    margin-left: 50%;
+    margin-bottom: 20px;
+}
+.oppo-features-image{
+    flex-basis: 50%;
     
 }
+.oppo-features-image img{
+    display: block;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: -55%;
+    margin-left: 0%;
+}
 
-.email button {
-    background: rgb(229, 9, 20);
-    color: rgb(255, 255, 255);
-    border: 2px solid red;
-    font-family: "Netflix Sans";
-    padding: 15px 28px;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    font-weight: 600;
+/* ---------------------line-------------------- */
+br{
+    color: blue;
+    height: 3;
+    width: 100%;
+    border: 3px solid blue;
 }
-.email input::placeholder {
-    color: rgb(170, 166, 166);
-    font-size: 15px;
-    font-weight: 100;
+
+/* ----------------frequently------------------- */
+.frequently{
+
 }
-@media (max-width: 768px) {
-    .email{
-        display: flex;
-        flex-direction: column;
-        gap: 23px;
-        justify-content: center;
-        align-content: center;
-    }
+
+.frequently h1{
+    font-weight: 500;
+    font-size: 40px;
 }
-.separation{
-    height: 7px;
-    background-color: rgb(39, 39, 39);
-    color: white;
+
+.according{
+    margin: 60ox auto;
+    width: 100%;
+    max-width: 750px;
 }
-.first {
+.according li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.according li label{
     display: flex;
-    justify-content: center;
-    max-width: 70vw;
-    margin: auto;
-    color: white;
-    justify-content: center;
     align-items: center;
-    font-family: "Netflix sans";
-}
-
-
-
-.secImg {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
     position: relative;
 }
-
-.secImg img {
-    width: 570px;
-    position: relative;
-    z-index: 10;
+label::after{
+    content: '+';
+    font-size: 34px ;
+    position:absolute;
+    right: 20px;
 }
 
-.secImg video {
-    position: absolute;
-    top: 51px;
-    right: 0;
-    width: 555px;
+input[type="radio"]{
+    display: none;
 }
 
-section.first>div {
-    display: flex;
-    flex-direction: column;
-    padding: 34px 0;
+.according .contain{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
 }
 
-section.first>div :nth-child(1) {
-    font-size: 48px;
-    font-weight: bolder;
-}
-
-
-section.first>div :nth-child(2) {
-    font-size: 24px;
-
+.according input[type="radio"]:checked +label + .contain{
+    max-height: 600px;
+    padding: 30px 20px;
 }
