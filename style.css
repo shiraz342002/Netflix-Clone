@@ -30,7 +30,7 @@ nav{
 
 }
 .logo{
-    height:2.8125rem;/*1.8125 */
+    height:2.8125rem;
     width: 10.4375rem;
 
 }
@@ -55,7 +55,7 @@ button{
     border: 1px solid white;   
 }
 .world-logo{
-    padding: ;
+   
     display: inline-flex;
     align-items: center;
 }
@@ -110,10 +110,17 @@ p{
 }
 .signupbutton{
     font-weight: 400;
-    font-size: 25px;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 32px;
+    position: relative;
+    left: 23px;
 }
 
-/* -------------------features--------------------- */
+
 .features{
     padding: 50px 12%;
     font-size: 22px;
@@ -176,7 +183,7 @@ p{
     margin-left: 0%;
 }
 
-/* ---------------------line-------------------- */
+
 br{
     color: blue;
     height: 3;
@@ -184,10 +191,7 @@ br{
     border: 3px solid blue;
 }
 
-/* ----------------frequently------------------- */
-.frequently{
 
-}
 
 .frequently h1{
     font-weight: 500;
